@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light">
+  <meta name="description" content="本地学习日历，记录每天完成的英语学习模块、复习到期量和连续学习天数。">
+  <title>学习日历 | Northlight English</title><link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text"><strong>Northlight English</strong><small>Quiet system · Clear progress</small></span></a><button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button><nav class="site-nav" aria-label="主要导航"><a href="index.html">首页</a><a href="vocabulary.html">词汇</a><a href="listening.html">听力</a><a href="reading.html">阅读</a><a href="writing.html">写作</a><a href="speaking.html">口语</a><a href="fun.html">趣味</a><a href="calendar.html">日历</a></nav></div></header>
+  <main class="page-width" id="main">
+    <section class="page-intro"><div><p class="kicker">Calendar · Evidence of consistency</p><h1 class="page-title">Small actions,<br><em>made visible.</em></h1><p>完成至少 5 个模块，日期会被标记为有效学习日。点击日期可查看当天完成了哪些模块、词库规模和待复习数量。所有记录仅保存在当前浏览器。</p></div><aside class="intro-aside"><strong>Local only</strong><span>No account · No sync · No upload<br>Clear anytime</span></aside></section>
+    <section class="stats-grid"><div class="stat"><strong id="monthStudyDays">0</strong><span>本月有效学习日</span></div><div class="stat"><strong id="calendarStreak">0</strong><span>连续学习天数</span></div><div class="stat"><strong id="calendarWords">0</strong><span>已进入词库</span></div><div class="stat"><strong id="calendarDue">0</strong><span>当前到期词</span></div></section>
+    <section class="glass-panel card">
+      <div class="calendar-toolbar"><button class="icon-button" id="prevMonth" type="button" aria-label="上个月">←</button><h2 id="calendarTitle">Loading</h2><button class="icon-button" id="nextMonth" type="button" aria-label="下个月">→</button></div>
+      <div class="calendar-weekdays" aria-hidden="true"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
+      <div class="calendar-grid" id="calendarGrid" data-skeleton><div class="skeleton" style="height:112px"></div><div class="skeleton" style="height:112px"></div><div class="skeleton" style="height:112px"></div><div class="skeleton" style="height:112px"></div><div class="skeleton" style="height:112px"></div><div class="skeleton" style="height:112px"></div><div class="skeleton" style="height:112px"></div></div>
+      <div class="calendar-detail" id="calendarDetail"><p style="color:var(--muted)">选择一个日期查看记录。</p></div>
+    </section>
+    <section class="section-block"><div class="two-column"><article class="card"><p class="kicker">Review rhythm</p><h2>日、周、月三种复盘</h2><div class="curve-list"><div class="curve-item"><strong>日</strong><span>今天哪个表达开始变得自然？</span><em>1 sentence</em></div><div class="curve-item"><strong>周</strong><span>哪些词总是 Again？哪个写作问题重复出现？</span><em>1 pattern</em></div><div class="curve-item"><strong>月</strong><span>能否用 2 分钟无稿说明一个经济议题？</span><em>1 output</em></div></div></article><aside class="card"><p class="kicker">Data control</p><h2>你的进度，你做主。</h2><p>清除日历只删除模块完成记录，不会自动删除词库或写作草稿。浏览器数据清理、隐身窗口结束或换设备后，记录不会自动同步。</p><button class="button danger" id="clearCalendar" type="button">清除本机日历记录</button></aside></div></section>
+  </main>
+  <footer class="site-footer"><div class="page-width footer-inner"><div><strong>Northlight English</strong><p>本地优先设计：没有账号系统，没有云端数据库，没有支付入口。</p></div><div class="footer-links"><a href="resources.html">资源与隐私</a><a href="index.html">今日计划</a></div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div><script src="assets/js/core.js" defer></script><script src="assets/js/calendar.js" defer></script>
+</body>
+</html>
